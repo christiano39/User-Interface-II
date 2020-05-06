@@ -157,6 +157,39 @@ div.project-container {
 
 .project-img img:hover {
     border: 1px solid white;
+    opacity: 20%;
+}
+
+/* experimental */
+.project-container .img-container {
+    position: relative;
+    text-align: center;
+}
+
+.project-container .img-container a {
+    position: absolute;
+    color: white;
+    top: 48%;
+    right: 45%;
+    background-color: transparent;
+    border: 0;
+    font-size: 300%;
+    opacity: 0%;
+    transform: translateY(100px);
+}
+
+.project-container:hover a {
+    display: inline;
+    transform: translateY(0);
+    opacity: 100%;
+    transition: opacity 0.6s;
+    transition: transform 0.6s;
+}
+
+.project-container:hover img {
+    opacity: 20%;
+    border: 1px solid white;
+    transition: opacity 0.6s;
 }
 
 /* footer styles */
