@@ -37,6 +37,12 @@ header {
     padding: 2%;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+}
+
 h1 {
     font-size: 300%;
     margin-bottom: 1%;
@@ -46,10 +52,6 @@ nav {
     font-size: 150%;
     display: flex;
     margin-left: 2%;
-}
-
-section {
-    border: 1px solid blue;
 }
 
 /* header styles */
@@ -70,6 +72,7 @@ section#about {
     display: flex;
     height: auto;
     justify-content: space-evenly;
+    margin-top: 3%;
 }
 
 #about .main-img {
@@ -96,6 +99,7 @@ section#about {
 .bio .projects-button {
     width: 25%;
     height: auto;
+    text-align: center;
     font-size: 110%;
     margin: 5% 0;
 }
@@ -109,10 +113,6 @@ section#projects {
     display: flex;
     flex-flow: row wrap;
     margin: 2% 0;
-}
-
-#projects div {
-    border: 1px solid red;
 }
 
 div.project-container {
@@ -134,4 +134,43 @@ div.project-container {
 .project-img img {
     width: 100%;
     height: auto;
+}
+
+/* footer styles */
+footer {
+    width: 100%;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+}
+
+footer .footer-container h2 {
+    font-size: 170%;
+    margin-bottom: 10%;
+}
+
+footer .footer-container a {
+    width: 80%;
+    text-align: center;
+    font-size: 120%;
+    padding: 10% 0;
+}
+
+div.social-media {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+div.social-media a {
+    width: 30%;
+    border: none;
 }
