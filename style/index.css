@@ -49,7 +49,7 @@ nav {
 }
 
 section {
-    border: 1px solid red;
+    border: 1px solid blue;
 }
 
 /* header styles */
@@ -74,7 +74,6 @@ section#about {
 
 #about .main-img {
     width: 45%;
-    border: 1px solid red;
 }
 
 .main-img img {
@@ -83,7 +82,6 @@ section#about {
 }
 
 #about .bio {
-    border: 1px solid red;
     width: 45%;
     font-size: 140%;
     display: flex;
@@ -104,4 +102,36 @@ section#about {
 
 .bio p {
     font-size: 110%;
+}
+
+/* project section styles */
+section#projects {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 2% 0;
+}
+
+#projects div {
+    border: 1px solid red;
+}
+
+div.project-container {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    margin: 2.5%;
+}
+
+.project-container .project-img {
+    width: 100%;
+}
+
+.project-container h3 {
+    font-size: 150%;
+    margin-top: 4%;
+}
+
+.project-img img {
+    width: 100%;
+    height: auto;
 }
