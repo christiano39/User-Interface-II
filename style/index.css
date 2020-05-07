@@ -28,6 +28,10 @@ time, mark, audio, video {
 }
 
 /* general styles */
+html {
+    font-size: 62.5%;
+}
+
 body {
     background-image: radial-gradient(#99A3A5, #697174);
     color: white;
@@ -59,12 +63,12 @@ img {
 }
 
 h1 {
-    font-size: 300%;
+    font-size: 4.8rem;
     margin-bottom: 1%;
 }
 
 nav {
-    font-size: 150%;
+    font-size: 2.4rem;
     display: flex;
     margin-left: 2%;
 }
@@ -75,10 +79,22 @@ nav a {
     border: 1px solid #697174;
     border-right: 0;
     padding: 0.5% 1%;
+    font-size: 2.4rem;
 }
 
 nav a:last-child {
     border-right: 1px solid #697174;
+}
+
+@media screen and (max-width: 500px) {
+    nav {
+        flex-wrap: wrap;
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        padding: 1% 4%;
+    }
 }
 
 /* about section styles */
@@ -92,23 +108,24 @@ section#about {
 
 #about .main-img {
     width: 45%;
+    height: auto;
 }
 
 .main-img img {
     width: 100%;
-    height: 500px;
+    height: auto;
 }
 
 #about .bio {
     width: 45%;
-    font-size: 140%;
+    font-size: 2.5rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
 
 .bio h2 {
-    font-size: 200%;
+    font-size: 4.5rem;
 }
 
 .bio .projects-button {
@@ -116,7 +133,7 @@ section#about {
     height: auto;
     padding: 2% 0;
     text-align: center;
-    font-size: 110%;
+    font-size: 2.5rem;
     margin: 5% 0;
     border-radius: 10px;
 }
@@ -125,7 +142,7 @@ section#about {
     font-size: 110%;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
     section#about {
         flex-direction: column;
         align-items: center;
@@ -133,6 +150,10 @@ section#about {
 
     #about .main-img {
         width: 90%;
+    }
+
+    #about .main-img img {
+        height: auto;
     }
 
     #about .bio {
@@ -145,6 +166,12 @@ section#about {
 
     .main-img img {
         height: 350px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .bio .projects-button {
+        width: 90%;
     }
 }
 
@@ -168,7 +195,7 @@ div.project-container {
 }
 
 .project-container h3 {
-    font-size: 150%;
+    font-size: 2.4rem;
     margin-top: 4%;
 }
 
@@ -229,6 +256,12 @@ div.project-container {
     transition: opacity 0.6s;
 }
 
+@media screen and (max-width: 500px) {
+    .project-container img {
+        height: auto;
+    }
+}
+
 /* footer styles */
 footer {
     width: 100%;
@@ -246,14 +279,14 @@ footer .footer-container {
 }
 
 footer .footer-container h2 {
-    font-size: 170%;
+    font-size: 2.8rem;
     margin-bottom: 10%;
 }
 
 footer .footer-container a {
     width: 80%;
     text-align: center;
-    font-size: 120%;
+    font-size: 2rem;
     padding: 10% 0;
     border-radius: 10px;
 }
