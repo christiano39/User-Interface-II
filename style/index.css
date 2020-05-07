@@ -260,8 +260,7 @@ div.project-container {
     right: 45%;
     background-color: transparent;
     border: 0;
-    font-size: 300%;
-    opacity: 0%;
+    opacity: 0;
     transform: translateY(10rem);
 }
 
