@@ -284,6 +284,10 @@ div.project-container {
     }
 }
 
+.project-container .fa-github {
+    font-size: 5rem;
+}
+
 /* footer styles */
 footer {
     width: 100%;
